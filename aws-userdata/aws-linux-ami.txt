@@ -1,0 +1,5 @@
+#!/bin/bash
+yum update -y
+yum install httpd php -y
+curl -o /var/www/html/index.php https://raw.githubusercontent.com/g1franc/php-test-app/master/index.php
+service httpd start
